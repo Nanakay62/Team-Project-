@@ -1,5 +1,6 @@
-
 const Category = require('../models/Category');
+const { validationResult } = require('express-validator');
+const { StatusCodes } = require('http-status-codes');
 
 const getAllCategories = async (req, res) => {
   try {
